@@ -4,23 +4,11 @@
     color: #52727F;
     
 }
-    .nav{
-        
-display: grid;
-margin-top: 0px;
-height: 12vh;
-grid-template-columns: 2fr 4fr;
-}
-
-
-  
-
+    
  li{
     display: inline-block;
     margin: 0px;
     margin-top: 50px;
-
-
 }
 
 a {
@@ -29,7 +17,6 @@ a {
     border-radius: 4px;
     text-decoration: none;
     color: white;
-    font-family: 'Franklin Gothic Medium';
 
 }
 a:hover {
@@ -38,128 +25,243 @@ a:hover {
  
 
 
+*{
+    margin: 0;
+    padding: 0;
+    
+    color: #52727F;
+    
+}
+.container{
+height: auto;
+  display: flex; 
+  
+  
+  flex-direction: column;
+
+
+}
+.hero{
+position: relative; 
+
+
+    left:3%;
+    bottom: 18%
+}
+    .nav{
+        
+display: flex;
+margin-top: 2%;
+width: 100%;
+
+height: 22vh;
+
+}
+.hero img {
+width: 100%;
+
+float: right;
+margin: 0 auto;
+bottom: 18%
+
+}
+.nav-item{
+margin-left:8%; 
+    display:flex;
+    justify-content: space-evenly;
+    
+    
+    width: 60%;
+}
+.nav-item div:not(:first-child){
+    margin-right:1%;
+    margin-top: 5%;
+    background: rgb(234, 234, 233);
+    width: 17%;
+    height:2.2vw;
+    padding: .5%;
+    font-size:1.5vw;  
+    text-align: center;
+    border-radius:2px;
+    box-shadow: 1px 1px 1px rgba(160, 158, 158, 0.6);
+    box-sizing: border-box;
+    border:1px solid rgb(246, 245, 245) ;
+    color: #52727F;
+}
+.home{
+margin-right:1%;
+    margin-top: 5%;
+    background: #52727F;
+    width: 17%;
+    height:2.2vw;
+    font-size:1.5vw; 
+    padding:.5%; 
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(160, 158, 158, 0.6);
+    box-sizing: border-box;
+    
+    color:white;
+}
 .header{
     background-color: #CDDCDC;
  background-image: radial-gradient(at 50% 100%, rgba(235, 230, 230, 0.5) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(202, 196, 196, 0.25) 0%, rgba(0,0,0,0.25) 100%);
  background-blend-mode: screen, overlay;
-height: 450px;
-margin-top: 20%;
+min-height: 35vw;
+margin-top: 4vw;
 position: relative;
-padding:0 0 0 30px ;
+padding:0 0 0 0 ;
 
 }
+.circle-container{
+
+    width:65%; 
+    position: absolute;
+    bottom: 65%;
+    left:1%;
+}
 .circle {
-margin:0 10px ;
-width: 190px;
-height: 190px;
+margin:0 1vw;
+width: 16vw;
+height: 16vw;
 border-radius: 50%;
 background: rgb(241, 238, 238);
 display: inline-block;
 border: 1px solid rgba(0, 0, 139, 0.415);
-position: relative;
-bottom: 15%;
+position: relative; 
+border: solid 10px white;
+
+
+
 
 }
 .circle img{
 max-width: 100%;
 height:100% ;
-border-radius: 50%;
-border: 5px solid white;
+border-radius: 50%
 
 }
-.smile{
+.smile{ 
     position: absolute;
-    bottom:0;
-    margin-bottom: 40px;
- margin-left: 5px;
+   left:60%; 
+    bottom:10%;
+    width: 50%;
+    height: 100%;
+    
+}
+.smile img{
+    position: absolute;
+    bottom: 1px;
+    height: 900px;
+max-width: 100%;
+max-height:100% ;
+transform: scale(1.2);
 }
 .header-text{
 position: absolute;
 width: 50%;
 height: 55%; 
-bottom: 5%;
+font-size:1.5vw; 
+top: 35%;
+left: 2%;
 color: #52727F;
 line-height:1.6;
 text-align: justify;
 
 
 }
-
-.thenav{
-    width: 10px;
+.header-text p span{
+    box-sizing: border-box;
+    text-decoration: underline;
+    font-weight: bold;
 }
 .content{
-    padding:30px 30px 30px 30px ;
-display:grid;
-grid-template-columns:1fr 2fr 1fr;
-grid-gap: 40px;
-/* height: 500px; */
+    
+ position: relative;
+display:flex;
+justify-content:space-between;
+font-size:1.5vw; 
+
+
+height: auto;
 color: #52727F;
 line-height:1.4;
-text-align: justify;
+
 
 }
+.content div {
+box-sizing: border-box;
+text-align: justify;
+margin: 2%;
 
+font-size: 100%
+
+
+}
 hr{
     border-top: 1px dashed #8c8b8b;
-   }
+   
+      margin:  5% 0 5% 0;
+}
+.content div{
+
+
+    height: auto;
+}
 .content div p {
 
-    margin: 25px 0 25px 0;
-    font-size: 1.1rem;
-    letter-spacing: 0.0525em;
+    margin: 5% 0 5% 0;
+    font-size:1.5vw; 
+    
   
 }
 .comments{
  color: rgb(139, 134, 134);
- font-size: 0.9rem; 
-margin:  35px 0 35px 0;
+ 
+margin:  0 0 0  0;
 line-height: 1.8;
 }
 .text-box{
 display: flex;
 box-sizing: border-box;
-margin: 30px 0 20px 0
+
+
 
 
 
 }
-.code-img{
-    width: 35%;
-    height: 30%;
-    margin-right: 20px;
-    margin-top:7px; 
+.small-img{
+    width: 40%;
+    height: 12vw;
+    
+    margin:2%; 
     
 }
 
-
+#small-text{
+  margin-top:1%; 
+   font-size:1.5vw; 
+    
+}
 .footer{
-    background-color: silver;
-
-width: 100%;    
-display: flex;
-justify-content: space-evenly;
+  
+   font-size:1.5vw; 
+    height: auto;
+    background: rgb(248, 248, 248);
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
 }
 .footer div{
-margin-top:20%;
+padding-top:5%;
 text-align: center;
-line-height: 2.5;
-
-} 
+line-height: 1.4;
+list-style: none;
+}
 .footer div p {
-font-size: 20px;
-margin-bottom: 0px;
+font-size:1.5vw; 
+margin-bottom: 2%;
 }
-
-
-.footer1{
-    margin-right: 300px;
+.list ul li {
+list-style: none;
 }
-
-#fb{ 
-width: 30px;
-}
-
-#twitter{ 
-    width: 30px;
-    }
